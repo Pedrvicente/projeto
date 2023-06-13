@@ -442,7 +442,7 @@ li {
 
 #posts{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: 90%;
     margin: 0 auto;
     justify-content: center;
@@ -477,7 +477,7 @@ li {
 
 .post{
     background-color: white;
-    height: 180px;
+    min-height: 180px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1133,6 +1133,8 @@ textarea {
         display: block;
     }
 }
+
+
 @media screen and (max-width:960px){
 
     .about-mission{
@@ -1147,8 +1149,6 @@ textarea {
         width: 80%;
         padding: 0px 0px 80px 0px;
     }
-
-
     .headlinePost{
         flex-direction:column-reverse;
     }
@@ -1178,9 +1178,19 @@ textarea {
         padding-left: 0px;
     }
 }
-@media screen and (max-width:1386px){
+/* @media screen and (max-width:1386px){
+    
+    
+    
+} */
+
+
+@media screen and (max-width:1220px){
     .content{
         top: 10%;
+    }
+    #posts{
+        flex-direction: column;
     }
     .section-allposts{
         width: 100%;
@@ -1193,10 +1203,6 @@ textarea {
     #allPosts{
         padding-left: 0;
     }
-}
-
-
-@media screen and (max-width:1220px){
     #whystart{
         position: unset;
     }
